@@ -1,0 +1,93 @@
+/*
+colors
+bg #000
+#ff9501
+#a6a6a6
+#fdfdfd
+*/
+
+.calc {
+	margin: 50px auto;
+	width: 300px;
+	height: 500px;
+	border-radius: 15px;
+	background: #0c0a03;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 20px;
+	box-shadow: 4px 4px 4px black;
+}
+
+.calc-screen {
+	height: 110px;
+	padding: 5px;
+	display: grid;
+	justify-items: end;
+	align-items: end;
+	margin-bottom: 30px;
+}
+
+.calc-screen p {
+	font-size: 60px;
+	margin: 0;
+}
+
+.buttons {
+	display: grid;
+	grid-template-areas:
+		"AC AC division division"
+		"seven eight nine multiply"
+		"four five six minus"
+		"one two three plus"
+		"zero zero dot equal";
+	grid-gap: 10px;
+	justify-items: center;
+
+}
+
+
+.btn {
+	width: 60px;
+	height: 60px;
+	background: #155783;
+	border-radius: 60%;
+	text-align: center;
+	line-height: 60px;
+	font-size: 20px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.btn.zero {
+	grid-area: zero;
+	width: 90%;
+	border-radius: 43%;
+}
+
+.btn.ac {
+	grid-area: AC;
+	width: 90%;
+	border-radius: 43%;
+}
+
+.btn.division {
+	grid-area: division;
+	width: 90%;
+	border-radius: 43%;
+}
+
+.btn:hover {
+	filter: brightness(150%);
+}
+
+.btn:active {
+	filter: brightness(100%);
+}
+
+.btn.bg-grey {
+	background: grey;
+}
+
+.btn.bg-orange {
+	background: rgb(160, 108, 12);
+}
